@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="valentinepage.css">
+
+   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+   <!-- custom js file link  -->
+   <script src="valentinepage.js" defer></script>
+   <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+  <section class="sidebar">
+    <div class="nav-header">
+      <p class="logo">M.LOVE</p>
+      <i class="bx bx-menu-alt-right btn-menu"></i>
+    </div>
+    <ul class="nav-links">
+      <li>
+        <i class="bx bx-search search-btn"></i>
+        <input type="text" placeholder="search..." />
+        <span class="tooltip">Search</span>
+      </li>
+      <li>
+        <a href="http://127.0.0.1:5500/OfficeWeb/homepage/homepage.html">
+          <i class="bx bx-home-alt-2"></i>
+          <span class="title">Home</span>
+        </a>
+        <span class="tooltip">Home</span>
+      </li>
+      <li>
+        <a href="http://127.0.0.1:5500/OfficeWeb/newyearpage/newyear.html">
+          <i class='bx bxs-party'></i>
+          <span class="title">New Year</span>
+        </a>
+        <span class="tooltip">New Year</span>
+      </li>
+      <li>
+        <a href="http://127.0.0.1:5500/OfficeWeb/valentinepage/valentinepage.html">
+          <i class='bx bx-heart-circle' ></i>
+          <span class="title">Valentines</span>
+        </a>
+        <span class="tooltip">valentines</span>
+      </li>
+      <li>
+        <a href="http://127.0.0.1:5500/OfficeWeb/20page/20page.html">
+          <i class='bx bx-book-open' ></i>
+          <span class="title">20/11</span>
+        </a>
+        <span class="tooltip">20/11</span>
+      </li>
+      <li>
+       <a href="http://127.0.0.1:5500/OfficeWeb/christmaspage/chrismastpage.html">
+          <i class='bx bxs-tree'></i>
+         <span class="title">Christmas</span>
+       </a>
+       <span class="tooltip">Christmas</span>
+     </li>
+      <li>
+        <a href="http://127.0.0.1:5500/OfficeWeb/birthdaypage/birthdaypage.html">
+          <i class='bx bx-gift'></i>
+          <span class="title">Birthday</span>
+        </a>
+        <span class="tooltip">Birthday</span>
+      </li>
+      <li>
+        <a href="http://127.0.0.1:5500/OfficeWeb/halloweenpage/halloweenpage.html">
+          <i class='bx bx-ghost'></i>
+          <span class="title">Halloween</span>
+        </a>
+        <span class="tooltip">Halloween</span>
+      </li>
+    </ul>
+    <div class="theme-wrapper">
+      <i class="bx bxs-moon theme-icon"></i>
+      <p>Dark Theme</p>
+      <div class="theme-btn">
+        <span class="theme-ball"></span>
+      </div>
+    </div>
+  </section>
+  <div class="main-content" style="background:linear-gradient(to top right, #d9d5ec 50%,  #e9bada 100%);">
+<div class="container">
+
+   <h3 class="title"> Valentine cards </h3>
+
+   <div class="products-container">
+
+      <div class="product" data-name="p-1">
+        <img src="val01(1).jpg" alt="">
+         <h3>Choice 1</h3>
+         <div class="price"></div>
+      </div>
+
+      <div class="product" data-name="p-2">
+        <img src="val02(1).jpg" alt="">
+         <h3>choice 2</h3>
+         <div class="price"></div>
+      </div>
+
+      <div class="product" data-name="p-3">
+        <img src="val03(1).jpg" alt="">
+         <h3>choice 3</h3>
+         <div class="price"></div>
+      </div>
+
+      <div class="product" data-name="p-4">
+        <img src="val04(1).jpg" alt="">
+         <h3>choice 4</h3>
+         <div class="price"></div>
+      </div>
+
+      <div class="product" data-name="p-5">
+        <img src="val05(1).jpg" alt="">
+         <h3>choice 5</h3>
+         <div class="price"></div>
+      </div>
+
+      <div class="product" data-name="p-6">
+        <img src="val06(1).jpg" alt="">
+         <h3>choice 6</h3>
+         <div class="price"></div>
+      </div>
+
+   </div>
+
+</div>
+
+<div class="products-preview">
+
+   <div class="preview" data-target="p-1">
+      <i class="fas fa-times"></i>
+      <img src="val01(1).jpg" alt="">
+      <h3></h3>
+      <div class="rating">
+        <input type="radio" id="star5" name="rating" value="5">
+        <label for="star5"></label>
+        <input type="radio" id="star4" name="rating" value="4">
+        <label for="star4"></label>
+        <input type="radio" id="star3" name="rating" value="3">
+        <label for="star3"></label>
+        <input type="radio" id="star2" name="rating" value="2">
+        <label for="star2"></label>
+        <input type="radio" id="star1" name="rating" value="1">
+        <label for="star1"></label>
+      </div>
+      <span id="ratingCount">No one has rated it</span>
+      <div class="price"></div>
+      <div class="buttons">
+         <a href="http://127.0.0.1:5500/OfficeWeb/valentine/card01/card01.html" class="buy">watch now</a>
+         <a href="#" class="cart">add to favorite</a>
+      </div>
+   </div>
+
+   <div class="preview" data-target="p-2">
+      <i class="fas fa-times"></i>
+      <img src="val02(1).jpg" alt="">
+      <h3></h3>
+      <div class="rating2">
+        <input type="radio" id="star05" name="rating" value="5">
+        <label for="star05"></label>
+        <input type="radio" id="star04" name="rating" value="4">
+        <label for="star04"></label>
+        <input type="radio" id="star03" name="rating" value="3">
+        <label for="star03"></label>
+        <input type="radio" id="star02" name="rating" value="2">
+        <label for="star02"></label>
+        <input type="radio" id="star01" name="rating" value="1">
+        <label for="star01"></label>
+      </div>
+      <span id="ratingCount2">No one has rated it</span>
+      <div class="price"></div>
+      <div class="buttons">
+         <a href="http://127.0.0.1:5500/OfficeWeb/valentine/card02/card02.html" class="buy">watch now</a>
+         <a href="#" class="cart">add to favorite</a>
+      </div>
+   </div>
+
+   <div class="preview" data-target="p-3">
+      <i class="fas fa-times"></i>
+      <img src="val03(1).jpg" alt="">
+      <h3></h3>
+      <div class="rating3">
+        <input type="radio" id="star005" name="rating" value="5">
+        <label for="star005"></label>
+        <input type="radio" id="star004" name="rating" value="4">
+        <label for="star004"></label>
+        <input type="radio" id="star003" name="rating" value="3">
+        <label for="star003"></label>
+        <input type="radio" id="star002" name="rating" value="2">
+        <label for="star002"></label>
+        <input type="radio" id="star001" name="rating" value="1">
+        <label for="star001"></label>
+      </div>
+      <span id="ratingCount3">No one has rated it</span>
+      <div class="price"></div>
+      <div class="buttons">
+         <a href="http://127.0.0.1:5500/OfficeWeb/valentine/card03/card03.html" class="buy">watch now</a>
+         <a href="#" class="cart">add to favorite</a>
+      </div>
+   </div>
+
+   <div class="preview" data-target="p-4">
+      <i class="fas fa-times"></i>
+      <img src="val04(1).jpg" alt="">
+      <h3></h3>
+      <div class="rating4">
+        <input type="radio" id="star0005" name="rating" value="5">
+        <label for="star0005"></label>
+        <input type="radio" id="star0004" name="rating" value="4">
+        <label for="star0004"></label>
+        <input type="radio" id="star0003" name="rating" value="3">
+        <label for="star0003"></label>
+        <input type="radio" id="star0002" name="rating" value="2">
+        <label for="star0002"></label>
+        <input type="radio" id="star0001" name="rating" value="1">
+        <label for="star0001"></label>
+      </div>
+      <span id="ratingCount4">No one has rated it</span>
+      <div class="price"></div>
+      <div class="buttons">
+         <a href="http://127.0.0.1:5500/OfficeWeb/valentine/card04/card04.html" class="buy">watch now</a>
+         <a href="#" class="cart">add to favorite</a>
+      </div>
+   </div>
+
+   <div class="preview" data-target="p-5">
+      <i class="fas fa-times"></i>
+      <img src="val05(1).jpg" alt="">
+      <h3></h3>
+      <div class="rating5">
+        <input type="radio" id="star00005" name="rating" value="5">
+        <label for="star00005"></label>
+        <input type="radio" id="star00004" name="rating" value="4">
+        <label for="star00004"></label>
+        <input type="radio" id="star00003" name="rating" value="3">
+        <label for="star00003"></label>
+        <input type="radio" id="star00002" name="rating" value="2">
+        <label for="star00002"></label>
+        <input type="radio" id="star00001" name="rating" value="1">
+        <label for="star00001"></label>
+      </div>
+      <span id="ratingCount5">No one has rated it</span>
+      <p></p>
+      <div class="price"></div>
+      <div class="buttons">
+         <a href="http://127.0.0.1:5500/OfficeWeb/valentine/card05/card05.html" class="buy">watch now</a>
+         <a href="#" class="cart">add to favorite</a>
+      </div>
+   </div>
+
+   <div class="preview" data-target="p-6">
+      <i class="fas fa-times"></i>
+      <img src="val06(1).jpg" alt="">
+      <h3></h3>
+      <div class="rating6">
+        <input type="radio" id="star50" name="rating" value="5">
+        <label for="star50"></label>
+        <input type="radio" id="star40" name="rating" value="4">
+        <label for="star40"></label>
+        <input type="radio" id="star30" name="rating" value="3">
+        <label for="star30"></label>
+        <input type="radio" id="star20" name="rating" value="2">
+        <label for="star20"></label>
+        <input type="radio" id="star10" name="rating" value="1">
+        <label for="star10"></label>
+      </div>
+      <span id="ratingCount6">No one has rated it</span>
+      <p></p>
+      <div class="price"></div>
+      <div class="buttons">
+         <a href="http://127.0.0.1:5500/OfficeWeb/valentine/card06/card06.html" class="buy">watch now</a>
+         <a href="#" class="cart">add to favorite</a>
+      </div>
+   </div>
+
+</div>
+<div class="update" style=" 
+  margin:0 160px 0 auto;
+  height:100px;
+  width:100px;">
+  <button style="
+   height: 50px;
+   width:110px;
+   background-color:#a69e9e;
+   color: #fff;
+   font-size:1.7rem;
+  ">Updating...</button>
+</div>
+  </div>
+</body>
+<script>
+   const btn_menu = document.querySelector(".btn-menu");
+   const side_bar = document.querySelector(".sidebar");
+
+   btn_menu.addEventListener("click", function () {
+     side_bar.classList.toggle("expand");
+     changebtn();
+   });
+
+   function changebtn() {
+     if (side_bar.classList.contains("expand")) {
+       btn_menu.classList.replace("bx-menu", "bx-menu-alt-right");
+     } else {
+       btn_menu.classList.replace("bx-menu-alt-right", "bx-menu");
+     }
+   }
+ </script>
+</html>

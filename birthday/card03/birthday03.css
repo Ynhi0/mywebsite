@@ -1,0 +1,211 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:100vh;
+    background-color: #00bbf9;
+  }
+  .birthdayCard {
+    position: relative;
+    width: 350px;
+    height:450px;
+    cursor: pointer;
+    transform-style: preserve-3d;
+      transform: perspective(2500px);
+    transition: 4s;
+  }
+.birthdayCard:hover {
+	transform: perspective(2500px) rotate(5deg);
+	box-shadow: inset 100px 20px 100px rgba(0,0,0,.15), 0 10px 100px rgba(0,0,0,0.3);
+}
+
+.birthdayCard:hover .cardFront {
+  transform: rotateY(-160deg); 
+}
+
+.birthdayCard:hover .front-text {
+  display: none;
+}
+.cardFront {
+    position: relative;
+    background-color: #fff;
+    width: 350px;
+    height:450px;
+    overflow: hidden;
+    transform-origin: left;
+    box-shadow: inset 100px 20px 100px rgba(0,0,0,.13), 30px 0 50px rgba(0,0,0,0.1);
+    transition: .4s;
+  }
+  .happy, .toyou {
+    position: relative;
+    font-family: didot;
+    text-align: center;
+    backface-visibility: hidden;
+    font-size: 45px; 
+  }
+  
+  .happy {
+    top:-10px;
+  }
+  
+  .toyou {
+    top:-120px;
+  }
+  
+  .bday {
+    position: relative;
+    font-family: arial;
+    font-size: 50px;
+    text-align: center;
+    top:-60px;
+  }
+  .cardInside {
+    position: absolute;
+    background-color: #fff;
+    width: 350px;
+    height:450px;
+    z-index:-1;
+    left:0;
+    top:0;
+    box-shadow: inset 100px 20px 100px rgba(0,0,0,0.2);
+  }
+  .inside-text {
+    position: relative;
+    top:-40px;
+    transform: scale(0.8);
+  }
+  .wishes {
+    position: relative;
+    top:-140px;
+    margin: 25px;
+    font-size: 20px;
+  }
+  p {
+    font-family: 'Brush Script MT', cursive;
+    color: #333;
+  }
+  
+  .name {
+    margin-left:150px;
+  }
+  .cake {
+    position:absolute;
+    overflow:hidden;
+    width:185px;
+    height:100px;
+    background-color: #FAD7A0;
+    top:330px;
+    left:90px;
+    border-radius:30px 30px 0 0;  
+  }
+  .cake:before {
+    content:"";
+    background-color: #935116;
+    width:185px;
+    height:10px;
+    position:absolute;
+    top:60px;
+    box-shadow: 0 25px #935116;
+  }
+  .cake:after {
+    content:"";
+    position: absolute;
+    background-color: #573612;
+    width:185px;
+    height:30px;
+    box-shadow:inset 0 10px rgba(0,0,0,0.07);
+  }
+  .chocolate {
+    position:absolute; 
+    background-color: #573612;
+    width:15px;
+    height:38px;
+    top:8px;
+    left:10;
+    z-index:1;
+    border-radius:50px;
+    box-shadow: 14.5px 12px #FAD7A0,29px 9px #573612,
+    43.45px 13.5px #FAD7A0,
+    57.8px 5px #573612,72.3px 9px #FAD7A0,86.8px 9px #573612,
+    101.3px 6px #FAD7A0,115.8px 9px #573612,
+    130.3px 8px #FAD7A0,144.8px 5px #573612,
+    159.3px 13px #FAD7A0,173.8px 12px #573612;
+  }
+  .candle {
+    position:absolute; 
+    width: 15px;
+    height:40px;
+    background-color: rgb(212, 124, 52);
+    top:290px;
+    left:175px;
+    box-shadow:inset 0 -10px 0 #E74C3C;
+  }
+  .candle:before {
+    position:absolute;
+    width:15px;
+    height:5px;
+    background-color:#e7e729;
+    content:"";
+    top:5px;
+    box-shadow: 0 25px #e7e729;
+  }
+  .flame {
+    position:absolute;
+    background-color: #F4D03F;
+    opacity:0.9;
+    box-shadow:inset 0 -5px 5px #D35400, 5px -5px 20px #FBFFA3;
+    width:20px;
+    height:30px;
+    top:260px;
+    border-radius:50%;
+    left:172px;
+    animation: flame 0.5s infinite;
+      
+  }
+  @keyframes flame {
+    from, to { transform: scale(1, 1); }
+    25% { transform: scale(0.9, 1.1); }
+    50% { transform: scale(1.1, 0.9); }
+    75% { transform: scale(0.95, 1.05); }
+  }
+  .balloons{
+    position:absolute;
+  }
+  .balloon1, .balloon2, .balloon3, .balloon4{
+    position:absolute;
+    width:70px;
+    height:90px;
+    border-radius: 50%;
+    background-color: #E74C3C;
+  }
+  .balloon1{
+    top:-150px;
+    background-color: #F4D03F;
+    left:50px;
+  }
+  .balloon2{
+    background-color: pink;
+    top:-150px;
+    left:250px;
+  }
+  .balloon3{
+    top:-160px;
+    left:190px;
+  }
+  .balloon4{
+    background-color: #06d6a0;
+    top:-160px;
+    left:120px;
+  }
+  .balloon1::after{
+    border-bottom:10px solid #F4D03F;
+}
+.balloon1::before, .balloon2::before, .balloon3::before, .balloon4::before{
+  content:'';
+  position:absolute;
+  width:1px;
+  height:85px;
+  background-color:rgb(69, 57, 57);
+  top:90px;
+  left:35px;
+}
